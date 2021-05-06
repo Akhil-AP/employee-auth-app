@@ -1,12 +1,35 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  background: hsl(210, 36%, 96%);
+}
+
+nav {
+  background-color: black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  margin: 0px;
 }
 
 li {
   display: list-item;
+  height: 50px;
+  padding: 13px;
+}
+
+li:hover {
+  background-color: #49c5b6;
 }
 
 .submit-btn {
@@ -62,4 +85,14 @@ td {
 table.center {
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+}
+
+.active-nav {
+  background-color: #49c5b6;
+}
+
+.inactive-nav > a {
+  color: rgb(255, 255, 255);
 }
